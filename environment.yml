@@ -1,0 +1,16 @@
+name: mne_stable
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - mne
+    - numpy
+    - scipy
+    - pandas
+    - scikit-learn
+    - torch
+    - matplotlib
+    - pymatreader

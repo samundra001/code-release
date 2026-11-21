@@ -1,0 +1,44 @@
+{
+  "112": {
+    "condition": "well_formed",
+    "manipulation": "variable",
+    "binary_label": 0,
+    "multiclass_label": 0
+  },
+  "117": {
+    "condition": "well_formed",
+    "manipulation": "keyword",
+    "binary_label": 0,
+    "multiclass_label": 0
+  },
+  "132": {
+    "condition": "semantically_implausible",
+    "manipulation": "variable",
+    "binary_label": 1,
+    "multiclass_label": 1
+  },
+  "222": {
+    "condition": "syntactically_invalid",
+    "manipulation": "variable",
+    "binary_label": 1,
+    "multiclass_label": 2
+  },
+  "227": {
+    "condition": "syntactically_invalid",
+    "manipulation": "keyword",
+    "binary_label": 1,
+    "multiclass_label": 2
+  },
+  "242": {
+    "condition": "doubly_anomalous",
+    "manipulation": "variable",
+    "binary_label": 1,
+    "multiclass_label": 3
+  },
+  "247": {
+    "condition": "doubly_anomalous",
+    "manipulation": "keyword",
+    "binary_label": 1,
+    "multiclass_label": 3
+  }
+}
