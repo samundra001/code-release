@@ -19,19 +19,17 @@ Main versions: Python 3.10.18, MNE-Python 1.10.2, scikit-learn 1.7.2,
 PyTorch 2.10.0 (CUDA 12.8), NumPy 1.26.4, SciPy 1.15.3, pandas 2.3.2,
 Matplotlib 3.10.6.
 
-## 2. Data
+## 2. Data and quick start
 
-Download OpenNeuro ds004771 (version 1.0.0) into `data/` at the repository root:
+Download OpenNeuro ds004771 (version 1.0.0) into `data/`, then run everything:
 
-```
-data/
-  participants.tsv
-  stimuli/Stimuli_v4_List1.txt ... List4.txt
-  sub-001/eeg/sub-001_task-PY_eeg.set ...
-```
+    bash download_data.sh
+    bash run_all.sh            # full analysis (many hours; EEGNet needs a GPU)
+    QUICK=1 bash run_all.sh    # fast check that every step runs (numbers will not match the paper)
 
-All scripts locate the repository root from their own position and write their
-results to `outputs/`.
+`run_all.sh` runs all steps below in order and logs each one to
+`outputs/run_all_logs/`. All scripts locate the repository root from their own
+position and write their results to `outputs/`.
 
 ## 3. Run order
 
