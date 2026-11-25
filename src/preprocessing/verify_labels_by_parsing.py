@@ -46,7 +46,7 @@ import pandas as pd
 BASE_DIR = Path(__file__).resolve().parents[2]
 STIM_CANDIDATES = [
     BASE_DIR / "data" / "stimuli",
-    Path("/project/srnepal/eeg-code-reading-difficulty/data/stimuli"),
+    Path(__file__).resolve().parents[2] / "data" / "stimuli",
 ]
 DEFAULT_CODEBOOK = BASE_DIR / "configs" / "c_code_to_condition_verified.json"
 DEFAULT_OUT = BASE_DIR / "outputs" / "verification"

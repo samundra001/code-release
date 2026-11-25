@@ -19,7 +19,7 @@ Checks:
   4. Real timing: for triggers that are NOT at relative sample 0, how far
      from the epoch's zero point do they sit, by trial position and code?
 
-USAGE (itiger, mne_stable):
+USAGE (mne_stable environment):
   python check_epoch_timing.py
   python check_epoch_timing.py --data-dir D --pass-list L --out-dir O
 """

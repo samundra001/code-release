@@ -2,7 +2,7 @@
 """
 topography_epoch0.py  —  scalp topography of the N400 and P600 effects (epoch0)
 
-Replaces the old LAN topography script. Uses exactly the same data as the ERP
+Uses exactly the same data as the ERP
 statistics: the per-participant averages cached by figures_epoch0.py
 (epoch0, Phase 2 kept participants, cleaned trials, `class` item removed).
 
@@ -12,13 +12,13 @@ Changes from the old script
      participants and trials come from Phase 2 (Kuo & Prat's rule), so the
      topographies use the same 45 participants as every other analysis.
   3. Both effects: N400 (semantic - well-formed, 300-500 ms) and
-     P600 (syntactic - well-formed, 500-800 ms). The LAN left-vs-right analysis is removed.
+     P600 (syntactic - well-formed, 500-800 ms).
   4. Montage = 'biosemi32' (the cap actually used) instead of standard_1020.
   5. Per-channel statistics: effect, t, p and FDR-corrected p at every electrode,
      so the distribution can be described with numbers, not only pictures.
   6. One simple distribution test per effect: is the effect larger at the
      posterior/central site than at Fz (paired t-test)?
-  7. Contour lines are off by default (contourpy library problem on itiger);
+  7. Contour lines are off by default (contourpy library problem on some systems);
      use --contours 6 if your environment supports them.
 
 Outputs (outputs/topography_epoch0/<set>/):

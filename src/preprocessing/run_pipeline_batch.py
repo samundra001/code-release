@@ -117,7 +117,7 @@ def validate_subject_data(data_dir: Path, subject: str) -> Tuple[bool, str]:
 # the batch loop for the next subject.
 #
 # The timeout is set generously at 300 seconds (5 minutes) per script per
-# subject. Script 1 is the slowest because it loads MNE — on the itiger
+# subject. Script 1 is the slowest because it loads MNE — on our compute cluster
 # cluster with the .set files on fast storage it typically takes 30-60 seconds.
 # Scripts 2 and 3 are pure pandas and finish in under 5 seconds each.
 #

@@ -11,7 +11,7 @@ run on several participants (not just one):
            their own average, they sum to ~0 at every sample. Prints the
            largest absolute cross-channel mean, next to a typical amplitude.
 
-USAGE (on itiger, in mne_stable):
+USAGE (in the mne_stable environment):
   python check_deposited_reference.py
 """
 
